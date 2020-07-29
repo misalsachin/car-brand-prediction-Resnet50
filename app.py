@@ -46,11 +46,11 @@ def model_predict(img_path, model):
     preds = model.predict(x)
     preds=np.argmax(preds, axis=1)
     if preds==0:
-        preds="The Car IS Audi"
+        preds="The Car IS Kwid"
     elif preds==1:
-        preds="The Car is Lamborghini"
+        preds="The Car is Alto"
     else:
-        preds="The Car Is Mercedes"
+        preds="The Car Is Ertiga"
     
     
     return preds
